@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .container{ 
+    height: 100vh;
+    width: 100vw;
+    
+  }
+
+  .work{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 50vh; */
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: cyan; */
+    /* border: 1px solid red; */
+    align-items: center;
+    font-size: 20px;
+    height: 10vh;
+    width: 90vw;
+  }
+  nav .logo{
+    height: 10vh;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+  }
+  .logo h2{
+    color: orange;
+  }
+  .logo h2 span{
+    color: blue;
+  }
+  h2{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif   ;
+  }
+  .navigation{
+    display: flex;
+    /* background-color: green; */
+    flex-direction: row;
+    width: 40vw;
+    /* border: 2px solid yellowgreen; */
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  .navigation ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid blue; */
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif   ;
+    cursor: pointer;
+  }
+  
+  .profile{
+    height: 7vh;
+    width: 4vw;
+    cursor: pointer;
+  }
+  .profile img{
+    height: 6.5vh;
+    width: 3.5vw;
+    border-radius: 50%;
+  }
+  .browsing{
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    width: 25vw;
+    /* border: 1px solid blue; */
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+  .inputs{
+    height: 6vh;
+    width: 15vw;
+    /* border: 1px solid green; */
+    
+  }
+  .inputs input{
+    height: 6vh;
+    width: 15vw;
+    /* border: 2px solid red; */
+  }
+  .shopping{
+    border: 1px solid ;
+    height: 6vh;
+    width: 5vw;
+    font-size: 1.7rem;
+    padding-left: 15px;
+  }
+  .round{
+    border-radius: 10px;
+    border: 1px solid rgb(174, 174, 174);
+  }
+  .browsing input{
+    border: none;
+  }
+  .nav_desc{
+    margin-left: -600px;
+  }
+  .having_content{
+    /* border: 1px solid red; */
+    display: flex;
+    height: 60vh;
+    width: 90vw;
+    justify-content: space-between;
+  }
+  .content_img{
+    /* width: 70vw; */
+    /* border: 1px solid grey; */
+    height: 60vh;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px grey;
+  }
+  .content_img img{
+    height: 70%;
+    width: 70%;
+  }
+  .content{
+    /* border: 1px solid yellowgreen;  */
+    border-radius: 20px;
+    height: 60vh;
+    width: 43vw;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .content h1{
+  }
+  .content p{
+    /* margin-top: px; */
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .amounts{
+    display: flex;
+    /* border: 1px solid green; */
+    width: 30vw;
+    justify-content: space-between;
+  }
+  .amounts button{
+    height: 8vh;
+    width: 15vw;
+    background-color: rgb(241, 241, 250);
+    border: none;
+    color: blue;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 600; */
+    border-radius: 10px;
+  }
+  .amounts div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 13vw;
+  }
+  .amounts div p:first-child{
+    color: green;
+    text-shadow: 0px 0px 1px green;
+    font-size: 1.5rem;
+  }
+  .add_item{
+    display: flex;
+    /* background-color: red; */
+    height: 8vh;
+    width: 25vw;
+    justify-content:space-between;
+  }
+  .add_item .increase{
+    height: 8vh;
+    width: 4vw;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .add_item .add_to_cart{
+    height: 8vh;
+    width: 20vw;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+  }
+  .more_views{
+    height: 20vh;
+  width: 90vw;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  overflow:auto;
+  overflow-y: hidden;
+  }
+
+  .review_shoe{
+    height: 19vh;
+    width: 15vw;
+    /* border: 1px solid grey; */
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 20px;
+    
+  }

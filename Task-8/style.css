@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  line-height: normal;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  background-color: white;
+  padding: 1.2rem 2.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 1.3rem;
+  font-size: larger;
+  color: #333;
+}
+
+.logo > img {
+  width: 2.4rem;
+}
+
+.username {
+  color: rgb(80, 80, 228);
+  padding: 1rem 1.5rem;
+  background-color: lightblue;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+/* Style the hero section */
+.hero {
+  min-height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: start;
+}
+
+.hero-content {
+  padding: 3rem;
+  color: #333;
+}
+
+.hero-heading {
+  font-size: 2rem;
+}
+
+.hero-heading-span {
+  font-size: 2rem;
+  color: rgb(80, 80, 228);
+  margin-bottom: 1.2rem;
+}
+.hero-content > p {
+  color: grey;
+}
+
+.hero-button {
+  transition: all ease 0.6s;
+  background-color: rgb(80, 80, 228);
+  border: none;
+  color: white;
+  padding: 1.2rem 2.4rem;
+  margin-top: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.hero-image {
+  float: right;
+  width: 100%;
+  position: relative;
+}
+
+.hero-image img {
+  position: relative;
+  width: 80%;
+  height: auto;
+  z-index: 10;
+}
+
+.hamburger-menu {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: inherit;
+}
+
+.mobile-menu {
+  display: none;
+  height: 100vh;
+  width: 50vh;
+}
+
+.mobile-menu > nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  background-color: #333;
+  color: white;
+}
+.mobile-menu a {
+  margin: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.hero-button:hover {
+  /* color: red; */
+  transform: scale(1.2) rotate(-5deg);
+}
+
+@media screen and (max-width: 850px) {
+  /* Styles for tablets */
+
+  .navbar {
+    background-color: white;
+    padding: 1.2rem 2.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin-right: 0.5rem;
+    font-size: medium;
+  }
+
+  .hero {
+    margin-top: 1rem;
+  }
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero-heading {
+    font-size: x-large;
+  }
+
+  .hero-heading-span {
+    font-size: x-large;
+  }
+
+  .hero-button {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* Styles for mobiles */
+
+  .navbar {
+    padding: 15px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .username {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .logo > img {
+    width: 50%;
+  }
+
+  .hero-heading {
+    font-size: large;
+  }
+
+  .hero-heading-span {
+    font-size: large;
+  }
+
+  .hero-content > p {
+    font-size: smaller;
+  }
+
+  .hero-content {
+    margin: auto;
+  }
+
+  .hero-image {
+    margin: auto;
+  }
+
+  .hero-image > img {
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    display: block;
+    padding: auto 3rem;
+    right: 30px;
+  }
+
+  .hamburger-menu:focus ~ .mobile-menu {
+    display: block;
+  }
+}

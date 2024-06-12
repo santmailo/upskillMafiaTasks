@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Task-17</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-items logo"><h1>logo</h1></div>
+      <div class="nav-items">
+        <a href="#" class="navLinks">Home</a>
+        <a href="#" class="navLinks">Services</a>
+        <a href="#" class="navLinks">Contact us</a>
+        <a href="#" class="navLinks">About us</a>
+      </div>
+      <div class="nav-items profile">
+        <div class="userName">UserName</div>
+        <div class="signOut">&#x2715;</div>
+      </div>
+    </nav>
+
+    <!-- cart items -->
+
+    <div class="container">
+      <div class="cart">
+        <div class="cart-items">
+          <h3>Added Items</h3>
+          <div class="cart-table">
+            <table cellspacing="0" id="cart-data-table">
+                <tr>
+                  <th>S.no</th>
+                  <th>Service Name</th>
+                  <th>Price</th>
+                </tr>
+            </table>
+            <div class="show-empty" id="show-empty">
+              <span class="error-symbol"> &#9432;</span>
+              <p class="empty-cart-title">No Items Added</p>
+              <p class="empty-cart-desc">
+                Add Items to the cart from Service bar
+              </p>
+            </div>
+            <div class="cart-total">
+              <span class="bold">Total Amount</span>
+              <span class="bold" >&#8377; <span id="totalCartValue">0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- user Details-->
+
+        <div class="payment">
+          <h3>Book Now</h3>
+          <div class="user-details">
+            <div>
+              <label for="userName"> Full Name </label>
+              <input
+                type="text"
+                id="userName"
+                placeholder="John Doe"
+              />
+            </div>
+            <div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="johndoe@email.com"
+                />
+              </div>
+
+              <div>
+                <label for="phone">Phone Number</label>
+                <input
+                  type="number"
+                  id="phone"
+                  placeholder="0000000000"
+                />
+              </div>
+            </div>
+            <button type="submit" class="bold" id="book-now-btn" onclick="checkCartEmpty()">
+              Book Now
+            </button>
+            <p class="bold green" id="successMsg">
+              <span>&#9432; </span> Thank you for Contacting, we will get back
+              to you soon.
+            </p>
+            <p class="bold red" id="cart-empty-error">
+              <span>&#9432; </span> Add the Items to the Cart to Book
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <p class="p_heading">Browse Our Services</p>
+        <p class="p_desc">
+          Click on the add to cart button to add the services to your cart or
+          press skip
+        </p>
+        <br />
+        <hr />
+        <br />
+
+        <div class="product-img-div" id="product-img-div">
+          <img
+            src="https://www.mycleaners.in/public/assets/images/Dryclean-002-min.jpg"
+            id="product-img"
+          />
+        </div>
+
+        <div class="service-details">
+          <h3 class="service-name" id="service-name">Dry Cleaning</h3>
+          <p class="service-price bold" >&#8377; <span id="service-price">200</span></p>
+        </div>
+
+        <div class="cart-btn-container">
+          <button class="skip-item-btn bold" id="skipItem" onclick="skipService()">
+            Skip Item
+            <span style="font-size: large; font-weight: bold">&#x2212; </span>
+          </button>
+          <button class="add-item-btn bold" id="addItem" onclick="addItem()">
+            Add Item <span>&#x2b;</span>
+          </button>
+        </div>
+
+        <br />
+        <hr />
+        <p class="bold info">
+          <span>&#9432;</span> Add the items to the cart and book now
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

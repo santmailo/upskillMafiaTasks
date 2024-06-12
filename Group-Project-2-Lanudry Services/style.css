@@ -1,0 +1,521 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+.bold {
+  font-weight: bold;
+}
+
+.blue {
+  color: lightskyblue;
+}
+
+.blue-violet {
+  color: blueviolet;
+}
+
+button {
+  border: none;
+}
+.grey {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.green {
+  color: limegreen;
+  margin: 0;
+  margin-left: 10px;
+  display: none;
+  /* border: 1px solid; */
+}
+
+.red {
+  color: tomato;
+  margin: 0;
+  margin-left: 10px;
+  display: none;
+}
+/* navigation styling start here */
+
+.nav {
+  height: 7vh;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.logo,
+.nav-links,
+.user {
+  height: 100%;
+}
+
+.logo {
+  width: 5%;
+}
+
+.logo > img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-links {
+  width: 60%;
+  display: flex;
+  font-size: large;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links > a,
+.user > a {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: grey;
+}
+
+.nav-links > a:hover,
+.user > a:hover {
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.user {
+  width: 10%;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user > a {
+  color: lightskyblue;
+  background-color: rgb(219, 236, 246);
+  border-radius: 0.5rem;
+}
+
+/* container Styling starts here :-- landing section */
+
+.container {
+  background-color: whitesmoke;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* left section  - container*/
+
+.landing-page-slogan {
+  width: 50%;
+}
+
+.landing-page-slogan > h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0;
+}
+
+.span-light-blue {
+  height: 100px;
+}
+
+.landing-page-slogan > p {
+  font-size: large;
+  margin: 0;
+}
+
+.landing-page-btn-container {
+  margin-top: 3rem;
+}
+
+.landing-page-btn {
+  font-size: x-large;
+  color: white;
+  padding: 1rem 1.5rem;
+  background-color: lightskyblue;
+  border-radius: 1rem;
+}
+
+/* right section - container */
+
+.landing-page-img {
+  margin-top: 3.5rem;
+  width: 40%;
+  height: 50vh;
+}
+
+.landing-page-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* landing page banner styling */
+
+.landing-page-banner {
+  height: 15vh;
+  margin-top: 2rem;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightskyblue;
+  color: darkslategray;
+}
+
+.banner-heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-data-number {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.banner-data-desc {
+  font-weight: bold;
+}
+
+/* cart starts */
+
+.cart-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 5%;
+}
+
+.cart-container {
+  width: 100%;
+  border-radius: 1rem;
+  height: 95%;
+  display: flex;
+  gap: 1rem;
+}
+
+.cart-services {
+  padding: 1rem;
+  width: 60%;
+  border-radius: 1rem;
+  border: 2px solid lightgrey;
+
+  background-color: white;
+}
+
+.cart-services-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: darkslategrey;
+  padding-bottom: 0;
+}
+
+.cart-services-heading + p {
+  margin: 0;
+  font-size: large;
+}
+
+/* .services-container{
+
+} */
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 1.5rem;
+  word-spacing: 3px;
+}
+
+.service-container-left {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-container button {
+  width: 10rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* cart section - cart info */
+
+.cart-info {
+  height: 100%;
+  width: 40%;
+  display: flex;
+}
+
+/*------------------ same as task 17 ------------------------------ */
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* cart items  - table starts*/
+
+.cart-items,
+.payment,
+.product {
+  background-color: white;
+  border-radius: 1rem;
+  border: 2px solid lightgrey;
+}
+
+.cart-items {
+  height: auto;
+}
+
+.cart-items > h3 {
+  text-align: center;
+}
+
+.cart-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
+  /* overflow: hidden; */
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+th {
+  background-color: lightgrey;
+}
+
+td {
+  color: grey;
+}
+.cart-total {
+  border-top: 2px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 45px;
+}
+
+/* empty cart error box styling */
+
+.show-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.error-symbol {
+  display: inline-block;
+  font-size: 50px;
+  color: grey;
+
+  font-weight: bold;
+}
+
+.empty-cart-title {
+  margin: 0;
+  font-weight: bold;
+  color: grey;
+}
+
+.empty-cart-desc {
+  margin: 0;
+  color: darkgrey;
+}
+
+/* payment user details started form */
+
+.payment {
+  padding: 10px;
+}
+
+/* .user-details { */
+/* padding: 10px; */
+/* } */
+label {
+  display: block;
+}
+
+input {
+  border-radius: 10px;
+  font-size: large;
+}
+.user-details > div:nth-child(1) > input {
+  padding-left: 15px;
+  width: 95%;
+  height: 40px;
+  border: 2px solid lightgrey;
+}
+
+.user-details > div:nth-child(2) {
+  display: flex;
+}
+
+.user-details > div:nth-child(2) > div {
+  margin-top: 10px;
+  width: 50%;
+}
+
+.user-details > div:nth-child(2) > div > input {
+  width: 90%;
+  height: 40px;
+  padding-left: 15px;
+  border: 2px solid lightgrey;
+}
+
+.user-details > button {
+  width: 95%;
+  margin: auto;
+  height: 40px;
+  margin: 20px 10px 10px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(206, 165, 243);
+  color: white;
+}
+
+/* remove from cart color and all ; */
+
+.remove-from-cart {
+  background-color: tomato;
+  color: white;
+}
+
+/*-----------------------feautues section last second section --------------------*/
+
+.user-feature {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 3% 5%;
+  background-color: white;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.feature-img {
+  width: 100px;
+  height: 100px;
+}
+
+.feature-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-about {
+}
+
+.feature-heading {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: darkslategray;
+  margin: 10px;
+}
+
+.feature-desc {
+  margin: 0;
+  color: gray;
+}
+
+/* --------------------news letter section styling below -----------------*/
+
+.newsletter {
+  display: flex;
+  padding: 3rem 5%;
+  background-color: lightskyblue;
+}
+
+.newsletter-heading {
+  font-size: 4rem;
+  width: 40%;
+}
+
+.newsletter-heading > p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.newsletter-user-info {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.newsletter-user-info > input {
+  padding-left: 10px;
+  border-radius: 0;
+  background-color: rgb(174, 224, 255);
+  border: none;
+  font-size: x-large;
+  color: white;
+  border: 1px solid white;
+}
+
+.newsletter-user-info > input[type="submit"] {
+  color: rgb(72, 188, 233);
+}
+
+/* ----------------footer section -------------- */
+.footer {
+  padding: 2rem 2rem 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-section {
+  width: 20%;
+}

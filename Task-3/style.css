@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  height: 80%;
+  margin: 10vh auto;
+  border: 1px solid;
+}
+
+.container > img {
+  display: block;
+  width: 100%;
+}
+
+.container > button {
+  width: 100%;
+  line-height: 10vh;
+  font-size: large;
+  background-image: linear-gradient(to right, #16a085 0%, #f4d03f 50%);
+}
+
+button {
+  border: 0;
+}

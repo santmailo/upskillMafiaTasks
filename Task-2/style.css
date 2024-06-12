@@ -1,0 +1,43 @@
+body {
+  background-color: orange;
+}
+
+.head {
+  color: darkblue;
+}
+
+#bglime {
+  background-color: lime;
+}
+
+.head:nth-child(2) > span {
+  color: red;
+}
+
+p {
+  color: white;
+}
+
+#para {
+  color: green;
+}
+
+p > span {
+  color: black;
+  font-size: larger;
+}
+
+ul > li:nth-child(1) a {
+  background-color: yellow;
+}
+
+ul > li:nth-child(2) a {
+  background-color: lightblue;
+}
+
+ol > li:nth-child(2) {
+  color: blue;
+}
+ol > li:nth-child(3) {
+  color: red;
+}

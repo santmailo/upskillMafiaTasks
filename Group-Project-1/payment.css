@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+}
+
+.left-container {
+  width: 45%;
+  padding: 5vw;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.user-details {
+}
+
+.user-details > input {
+  width: 95%;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: rgb(232, 239, 245);
+  border-radius: 10px;
+  font-size: large;
+  border: 1px solid lightslategray;
+}
+
+.payment-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-method {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 2px solid lightslategray;
+}
+
+.orange {
+  border: 2px solid orange;
+  color: orange;
+}
+
+.payment-method > img {
+  width: 40px;
+}
+
+.cardNumber > input {
+  width: 94%;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: rgb(232, 239, 245);
+  border-radius: 10px;
+  font-size: large;
+  border: 1px solid lightslategray;
+}
+
+.cardNumber {
+  margin-top: 20px;
+}
+
+.card-details {
+  display: flex;
+  width: 100%;
+  margin: 10px 10px 10px 0;
+}
+
+.card-details > div {
+  width: 47%;
+  margin: auto;
+}
+
+.card-details > div > input {
+  width: 90%;
+  height: 40px;
+  padding: 5px 20px;
+  padding-right: 10px;
+  background-color: rgb(232, 239, 245);
+  border-radius: 10px;
+  font-size: large;
+  border: 1px solid lightslategray;
+}
+
+.payment-container {
+  padding: 20px;
+  border: 2px solid lightslategray;
+  border-radius: 10px;
+}
+
+/* ----------Right Container --------------*/
+
+.right-container {
+  padding: 5vw;
+  padding-top: 60px;
+  padding-bottom: 0;
+  background-color: rgb(232, 239, 245);
+  height: auto;
+}
+
+.right-container > h1 {
+  text-align: center;
+}
+
+.right {
+  padding: 10px;
+  margin-left: 50px;
+  width: auto;
+}
+
+.applyCoupon {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+#couponCode {
+  padding: 7px;
+  font-size: medium;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+#couponCode ::placeholder {
+  color: lightgrey;
+}
+
+.couponCode {
+  padding: 10px;
+  font-size: normal;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: dodgerblue;
+}
+
+.flex-spaceBetween {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymentContainer {
+  border: 2px solid lightslategray;
+  border-radius: 15px;
+  width: 100%;
+  font-size: larger;
+  padding: 10px;
+}
+
+.btn-payNow {
+  width: 100%;
+  padding: 10px;
+}
+
+.btn-payNow > button {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 26px;
+  border: none;
+}
+
+.price {
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+}
+
+.price-type {
+  color: grey;
+  font-weight: bold;
+}
+
+.right > div > div > div {
+  margin: 10px auto;
+}
+
+#imgIcons {
+  width: 120px;
+  height: 60px;
+}
+
+.paymentImg {
+  margin-top: 10px;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.backToHomePage {
+  margin: auto 50px auto 50px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.bold > .price-type {
+  font-size: 1.8rem;
+}
+
+.bold > .price {
+  font-size: 1.8rem;
+}

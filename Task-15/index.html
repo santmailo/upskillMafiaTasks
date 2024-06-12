@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Task-15</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="greeting">Hello</h1>
+    </header>
+
+    <div class="container">
+      <div onclick="changeBG(this, 'red')" class="box">Red</div>
+      <div onclick="changeBG(this, 'green')" class="box">Green</div>
+      <div onclick="changeBG(this, 'blue')" class="box">Blue</div>
+      <div onclick="changeBG(this, 'yellow')" class="box">Yellow</div>
+    </div>
+
+    <div class="user-details">
+      <input type="text" placeholder="Your Name" id="userName" />
+      <button id="btn" onclick="showGreetings()">Greet</button>
+    </div>
+  </body>
+</html>

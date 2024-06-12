@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  line-height: normal;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  background-color: white;
+  padding: 20px 30px;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #333;
+}
+
+nav {
+  margin-left: 40vw;
+}
+
+.logo {
+  position: absolute;
+  width: 100%;
+  left: 10%;
+  top: 15px;
+}
+
+.logo > img {
+  width: 2.4rem;
+}
+
+.username {
+  position: absolute;
+  right: 10%;
+  top: 10px;
+  color: rgb(80, 80, 228);
+  padding: 10px 20px;
+  background-color: lightblue;
+  border-radius: 1.5rem;
+}
+
+/* Style the hero section */
+.hero {
+  min-height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 70vw;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: start;
+}
+
+.hero-content {
+  padding: 50px;
+  color: #333;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-heading-span {
+  color: rgb(80, 80, 228);
+}
+.hero-content > p {
+  color: grey;
+}
+
+.hero-button {
+  background-color: rgb(80, 80, 228);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.hero-image {
+  float: right;
+  width: 100%;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,99 @@
+:root {
+  --red: red;
+  --white: white;
+  --yellow: yellow;
+  --green: green;
+  --blue: lightblue;
+  --grey: lightgrey;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  border-bottom: 2px solid lightgrey;
+}
+
+span {
+  /* margin: 10px; */
+  font-weight: bold;
+}
+
+.greeting {
+  font-size: xx-large;
+}
+
+.login-btn {
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.user-search {
+  display: flex;
+  border: 2px solid var(--grey);
+  margin: 30px 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.user-search > div {
+  background-color: var(--grey);
+  border-radius: 10px;
+  margin-right: 16px;
+  padding: 10px;
+}
+
+#userSearch {
+  border: none;
+  font-size: medium;
+  background-color: inherit;
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+}
+
+#btn {
+  width: 150px;
+  font-size: medium;
+  background-color: blueviolet;
+  /* padding: 5px; */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 30px 50px;
+  padding: 10px 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 30px 50px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid;
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+}

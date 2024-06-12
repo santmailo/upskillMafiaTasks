@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="payment.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <p class="bold">Checkout</p>
+
+        <br />
+        <h1>Contact Details</h1>
+        <div class="user-details">
+          <label for="email" class="bold">Email ID</label>
+          <br />
+          <input type="email" id="email" placeholder="JohnDoe@mail.com" />
+        </div>
+
+        <h1>Payment</h1>
+
+        <div class="payment-container">
+          <div class="payment-details">
+            <div class="payment-method orange">
+              <img
+                src="https://cdn.icon-icons.com/icons2/2582/PNG/512/credit_card_cards_icon_153986.png"
+                alt="card"
+              />
+              <span>Card</span>
+            </div>
+            <div class="payment-method">
+              <img
+                src="https://www.shutterstock.com/image-vector/bitcoin-crypto-currency-icon-payment-260nw-1497049121.jpg"
+                alt="crypto"
+              />
+              <span>Crypto</span>
+            </div>
+            <div class="payment-method">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/021/375/941/original/bank-icon-for-your-website-design-logo-app-ui-free-vector.jpg"
+                alt="bank"
+              />
+              <span>Bank</span>
+            </div>
+            <div class="payment-method">
+              <img
+                src="https://imgs.search.brave.com/BLykosFU8J_kBa0V2goYHlTriq0p7iuLoaZC-A00Xcc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG40/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvYXBwLWN1c3Rv/bS11aS0xLzQ4L1Ro/cmVlX2RvdHNfdXBy/aWdodC02NC5wbmc"
+                alt="more"
+              />
+            </div>
+          </div>
+          <div class="cardNumber">
+            <label for="card-number" class="bold">Card Number</label>
+            <br />
+            <input type="number" id="card-number" />
+          </div>
+          <div class="card-details">
+            <div>
+              <label for="expiry" class="bold">Expiry</label>
+              <br />
+              <input type="date" id="expiry" />
+            </div>
+            <div>
+              <label for="CVC" class="bold">CVC</label>
+              <br />
+              <input type="number" id="CVC" />
+            </div>
+          </div>
+          <div class="card-details">
+            <div>
+              <label for="country" class="bold">Country</label>
+              <br />
+              <input type="text" id="country" />
+            </div>
+            <div>
+              <label for="ZIP" class="bold">ZIP</label>
+              <br />
+              <input type="number" id="ZIP" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <h1>Order Summary</h1>
+        <div class="right grey">
+          <div class="paymentContainer grey">
+            <label for="couponCode" class="black bold"
+              >Enter Coupon Code
+            </label>
+            <br />
+            <div class="applyCoupon">
+              <input type="text" placeholder="COUPON CODE" id="couponCode" />
+              <button class="couponCode">Apply Coupon</button>
+            </div>
+            <div>
+              <div class="flex-spaceBetween">
+                <span class="price-type">Sub Total</span>
+                <span class="price">$1996</span>
+              </div>
+              <div class="flex-spaceBetween">
+                <span class="price-type">Taxes(if applicable)</span>
+                <span class="price">$44</span>
+              </div>
+              <div class="flex-spaceBetween">
+                <span class="price-type">Discount</span>
+                <span class="price">$0</span>
+              </div>
+              <div class="flex-spaceBetween bold black">
+                <span class="price-type"> Total</span>
+                <span class="price">$2050</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-payNow">
+            <button>
+              <a style="text-decoration: none; color: white" href="index.html"
+                >Pay Now $1996</a
+              >
+            </button>
+            <div class="paymentImg">
+              <img
+                src="https://t4.ftcdn.net/jpg/05/33/02/07/360_F_533020758_0XMfvXWfOeXAzC4oE0tDI7gzOJyLBaXz.jpg"
+                alt="secure SSL"
+                id="imgIcons"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/89/Razorpay_logo.svg"
+                alt="Razorpay_logo"
+                id="imgIcons"
+              />
+
+              <img
+                src="https://img.freepik.com/premium-vector/secure-payment-credit-card-icon-with-shield-secure-transaction-vector-stock-illustration_100456-11325.jpg"
+                alt="Secure Payment"
+                id="imgIcons"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
