@@ -15,17 +15,13 @@ console.log(squareNumber);
 // Q2 - Write a JavaScript function that takes a student's score as a parameter and returns their grade (A, B, C, D, or F) using a series of ternary operators.
 
 function checkGrade(num) {
-  if (num >= 85) {
-    return "Your grade is :- A";
-  } else if (num >= 70) {
-    return "Your grade is :- b";
-  } else if (num >= 55) {
-    return "Your grade is :- c";
-  } else if (num >= 45) {
-    return "Your grade is :- d";
-  } else {
-    return "Your grade is :- f";
-  }
+function checkGrade(num) {
+  const grade = (num >= 85) ? "A" : (num >= 70) ? "B" : (num >= 55) ? "C" :  (num >= 45) ? "D" : "F";
+  console.log("Your grade is :- " + grade);
+}
+checkGrade(100);
+checkGrade(70);
+checkGrade(40);
 }
 
 checkGrade(100);
