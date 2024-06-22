@@ -1,0 +1,54 @@
+.products-container {
+  width: 70%;
+  height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: none;
+  justify-content: space-around;
+  gap: 10px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.product {
+  width: 30%;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: bisque;
+  /* border: 1px solid; */
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
+
+.img-container {
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid yellow; */
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shoe-img {
+  width: 100%;
+  height: 100%;
+}
+
+.shoe-name {
+  text-align: center;
+}
+
+.price {
+  text-align: center;
+  /* border: 1px solid; */
+}
+
+.add-to-cart-btn {
+  padding: 10px;
+  border-radius: 0.5rem;
+}
