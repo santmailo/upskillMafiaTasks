@@ -1,29 +1,10 @@
-import { useEffect, useState } from "react";
 import { Loading, Error, PhotosApp } from "./components";
+import useFetch from "./hooks/useFetch";
 
 function App() {
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(false);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/photos"
-      );
-      const data = await response.json();
-      setData(data);
-      setIsLoading(false);
-    } catch (err) {
-      console.log(err);
-      setIsLoading(false);
-      setError(true);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, [data]);
+  // const [data, setData] = useState([]);
+  const url = "https://jsonplaceholder.typicode.com/photos";
+  const { data, isLoading, error } = useFetch(url);
 
   return (
     <>
