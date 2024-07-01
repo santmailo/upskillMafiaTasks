@@ -1,6 +1,6 @@
 function LogIn() {
   return (
-    <div className=" h-screen bg-slate-200 flex justify-center items-center">
+    <div className=" h-screen bg-slate-200 flex justify-center items-center ">
       <div className=" w-1/4 h-px-200  bg-white p-10 rounded-md">
         <h1 className="text-center text-4xl font-bold py-6 ">Login</h1>
         <label htmlFor="email" className="w-full p-2">
