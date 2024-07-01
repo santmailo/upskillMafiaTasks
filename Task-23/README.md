@@ -1,6 +1,6 @@
 # Live Preview of the site
 
-https://glistening-gumption-ec8ea9.netlify.app/
+https://stupendous-chebakia-7db93f.netlify.app/
 
 # React + Vite
 
